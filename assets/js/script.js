@@ -1,5 +1,20 @@
 'use strict';
 
+// script.js
+
+document.getElementById('modeToggle').addEventListener('click', function() {
+  document.body.classList.toggle('dark-mode');
+  let theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
+  localStorage.setItem('theme', theme);
+});
+
+window.onload = function() {
+  let storedTheme = localStorage.getItem('theme') || 'light';
+  if (storedTheme === 'dark') {
+      document.body.classList.add('dark-mode');
+  }
+};
+
 
 
 // element toggle function
