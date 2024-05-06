@@ -1,20 +1,19 @@
 'use strict';
 
-// script.js
+document.addEventListener('DOMContentLoaded', function () {
+  const modeToggle = document.getElementById('modeToggle');
+  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 
-document.getElementById('modeToggle').addEventListener('click', function() {
-  document.body.classList.toggle('dark-mode');
-  let theme = document.body.classList.contains('dark-mode') ? 'dark' : 'light';
-  localStorage.setItem('theme', theme);
-});
-
-window.onload = function() {
-  let storedTheme = localStorage.getItem('theme') || 'light';
-  if (storedTheme === 'dark') {
-      document.body.classList.add('dark-mode');
+  if (currentTheme) {
+      document.body.classList.add(currentTheme);
   }
-};
 
+  modeToggle.addEventListener('click', function () {
+      document.body.classList.toggle('light-mode');
+      let theme = document.body.classList.contains('light-mode') ? 'light-mode' : '';
+      localStorage.setItem('theme', theme);
+  });
+});
 
 
 // element toggle function
