@@ -1,19 +1,5 @@
 'use strict';
 
-document.addEventListener('DOMContentLoaded', function () {
-  const modeToggle = document.getElementById('modeToggle');
-  const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
-
-  if (currentTheme) {
-      document.body.classList.add(currentTheme);
-  }
-
-  modeToggle.addEventListener('click', function () {
-      document.body.classList.toggle('light-mode');
-      let theme = document.body.classList.contains('light-mode') ? 'light-mode' : '';
-      localStorage.setItem('theme', theme);
-  });
-});
 
 
 // element toggle function
