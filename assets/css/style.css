@@ -76,8 +76,8 @@
   --smoky-black:  hsla(0, 0%, 84%, 0.7);
   --white-1: hsl(0, 0%, 7%);
   --white-2: hsl(0, 0%, 7%);
-  --orange-yellow-crayola: hsl(45, 100%, 55%);
-  --vegas-gold: hsl(45, 100%, 50%);
+  --orange-yellow-crayola: hsl(32, 100%, 36%);
+  --vegas-gold: hsl(32, 100%, 36%);
   --light-gray: hsl(0, 0%, 7%);
   --light-gray-70:  hsl(0, 0%, 100%);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
@@ -346,7 +346,7 @@ main {
 }
 
 .avatar-box {
-  background: var(--smoky-black);
+  /* background: var(--smoky-black); */
   border-radius: 20px;
 }
 
@@ -602,7 +602,7 @@ main {
   top: 0;
   left: 0;
   transform: translate(15px, -25px);
-  background: var(--smoky-black);
+  /* background: var(--smoky-black); */
   border-radius: 14px;
   /* box-shadow: var(--shadow-1); */
 }
@@ -710,7 +710,7 @@ main {
 .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .modal-avatar-box {
-  background: var(--smoky-black);
+  /* background: var(--smoky-black); */
   width: max-content;
   border-radius: 14px;
   margin-bottom: 15px;
